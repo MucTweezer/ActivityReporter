@@ -1,0 +1,13 @@
+ActivityReporter Version History
+
+Version 2.2.0
+  Added messages to respond when a player or console executes a command.
+  Fixed an error that would occur when the console called for an invalid logging type via /enablelogging.
+Version 2.1.0:
+  Cleaned up code for memory management; trimming of lists.
+  Cleaned up code by adding trimAllLoggingLists() and stopLoggingPlayer() to PlayerProfile and ConsoleProfile.
+  Added colours to reporting messages.
+Version 2.0.0: 
+  Added ability to report certain events for certain players.
+  Revised commands to control reporting certain events for certain players.
+Version 1.0.0: First release

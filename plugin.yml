@@ -1,0 +1,32 @@
+name: ActivityReporter
+version: 2.2.0
+description: This plugin allows you to track certain events of players.
+author: MucTweezer
+
+main: me.MucTweezer.activityreporter.ActivityReporter
+database: false
+
+commands:
+  enablelogging:
+    description: If no arguments are provided, enables normal logging.
+    aliases: el
+    permission: activityreporter.enablelogging
+    usage: Syntax error! First argument must be a player name. Second argument must be breaking/placing/combat/movement.
+  disablelogging:
+    description: If no arguments are provided, disables normal logging.
+    aliases: dl
+    permission: activityreporter.disablelogging
+    usage: Syntax error! First argument must be a player name. Second argument must be breaking/placing/combat/movement
+
+permissions:
+  activityreporter.*:
+    description: Gives access to all ActivityReporter commands
+    children:
+      activityreporter.enablelogging: true
+      activityreporter.disablelogging: true
+  activityreporter.enablelogging:
+    description: Allows the use of the enablelogging command
+    default: op
+  activityreporter.disablelogging:
+    description: Allows the use of the disablelogging command
+    default: op
